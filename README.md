@@ -1,6 +1,6 @@
 alfred workflows
 - [x] [nvALT](https://github.com/cdpath/nvALT)
-- [x] Eudic
+- [x] [Eudic](https://github.com/cdpath/alfred/blob/master/workflows/Eudic.alfredworkflow)
 - [ ] Quiver
 
 best practice
