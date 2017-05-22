@@ -13,9 +13,9 @@
 2\. I have to use the following code to make sure Eudict is opened. It may be a bug.
 
 ```AppleScript
-do shell script "open /Applications/Eudb_en.app"
+do shell script "open -b com.eusoft.eudic"
 delay 0.1
-do shell script "open /Applications/Eudb_en.app"
+do shell script "open -b com.eusoft.eudic"
 ```
 
 
