@@ -1,15 +1,26 @@
-alfred workflows
+## Alfred workflows
+
 - [x] [nvALT](https://github.com/cdpath/nvALT)
 - [x] [Eudic](https://github.com/cdpath/alfred/blob/master/workflows/Eudic.alfredworkflow)
-- [ ] Quiver
+- [ ] Quiver
 
-best practice
+### Note for Eudic workflow
 
-1. use fallback search
-2. increase `delay 0.5` to `delay 1` if necessary
+1\. Add Eudict to Alfred fallback results
 
-reference
+![setup fallback results](./imgs/setup_fallback_results.png)
 
-[1](http://appwen.com/index.php?m=3g&c=read&tid=724),
-[2](https://github.com/pilotmoon/PopClip-Extensions/blob/43c4baac8692feb6ce596483d79bcce0b20cfbad/source/Eudic_Free/Eudic.applescript),
-[3](https://github.com/superkam/Alfred2_EuDic_Search)
+2\. I have to use the following code to make sure Eudict is opened. It may be a bug.
+
+```AppleScript
+do shell script "open /Applications/Eudb_en.app"
+delay 0.1
+do shell script "open /Applications/Eudb_en.app"
+```
+
+
+## Reference
+
+- [PopClip-Extensions/Eudic.applescript](https://github.com/pilotmoon/PopClip-Extensions/blob/43c4baac8692feb6ce596483d79bcce0b20cfbad/source/Eudic_Free/Eudic.applescript)
+- [superkam/Alfred2_EuDic_Search](https://github.com/superkam/Alfred2_EuDic_Search)
+
