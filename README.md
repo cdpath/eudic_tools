@@ -1,8 +1,7 @@
-## Alfred workflows
+## EuDic tools for Mac
 
-- [x] [nvALT](https://github.com/cdpath/nvALT)
 - [x] [Eudic](https://github.com/cdpath/alfred/blob/master/workflows/Eudic.alfredworkflow)
-- [ ] Quiver
+- [x] [Eudic lite](https://github.com/cdpath/alfred/blob/master/workflows/Eudic_lite.alfredworkflow)
 
 ### Note for Eudic workflow
 
