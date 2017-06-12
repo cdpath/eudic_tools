@@ -1,7 +1,6 @@
 ## EuDic tools for Mac
 
-- [x] [Eudic](https://github.com/cdpath/alfred/blob/master/workflows/Eudic.alfredworkflow)
-- [x] [Eudic lite](https://github.com/cdpath/alfred/blob/master/workflows/Eudic_lite.alfredworkflow)
+[Download](https://github.com/cdpath/EuDic_tools/releases)
 
 ### Note for Eudic workflow
 
