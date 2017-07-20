@@ -2,7 +2,7 @@
 
 [Download](https://github.com/cdpath/EuDic_tools/releases)
 
-### Note for Eudic workflow
+### Alfred workflow for EuDic
 
 1\. Add Eudict to Alfred fallback results
 
@@ -16,6 +16,9 @@ delay 0.1
 do shell script "open -b com.eusoft.eudic"
 ```
 
+### PopClip Extension for EuDic
+
+![install extension](./imgs/install_popclip_extension.png)
 
 ## Reference
 
