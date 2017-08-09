@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.cdpath.alfred</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>56982BE6-7409-4E95-883F-45E4B4704DEF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E05722E2-9DF4-46A1-A1A3-D54BFA0BBA66</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E8FCCB49-6B78-47F6-8BB3-4133DA1F9DF8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E05722E2-9DF4-46A1-A1A3-D54BFA0BBA66</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>cdpath</string>
+	<key>description</key>
+	<string>Define a word</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Eudic</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>d</string>
+				<key>subtext</key>
+				<string>Search in Eudic</string>
+				<key>text</key>
+				<string>Eudic</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>56982BE6-7409-4E95-883F-45E4B4704DEF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>Eudic</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>E8FCCB49-6B78-47F6-8BB3-4133DA1F9DF8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>if [ "$eudic_version" == "pro" ];then
+    open -b 'com.eusoft.eudic'
+    open -b 'com.eusoft.eudic'
+osascript &lt;&lt;EOD
+    tell application id "com.eusoft.eudic"
+        activate
+        show dic with word "{query}"
+    end tell
+EOD
+elif [ "$eudic_version" == "lite" ];then
+    open -b 'com.eusoft.freeeudic'
+    open -b 'com.eusoft.freeeudic'
+osascript &lt;&lt;EOD
+    tell application id "com.eusoft.freeeudic"
+        activate
+        show dic with word "{query}"
+    end tell
+EOD
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E05722E2-9DF4-46A1-A1A3-D54BFA0BBA66</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Use AppleScript to search in Eudict
+
+For Eudic Pro set eudic_version to 'pro', otherwise 'lite'</string>
+	<key>uidata</key>
+	<dict>
+		<key>56982BE6-7409-4E95-883F-45E4B4704DEF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>E05722E2-9DF4-46A1-A1A3-D54BFA0BBA66</key>
+		<dict>
+			<key>xpos</key>
+			<integer>410</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+		<key>E8FCCB49-6B78-47F6-8BB3-4133DA1F9DF8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>eudic_version</key>
+		<string>pro</string>
+	</dict>
+	<key>version</key>
+	<string>1.4</string>
+	<key>webaddress</key>
+	<string>https://github.com/cdpath/eudic_tools</string>
+</dict>
+</plist>
