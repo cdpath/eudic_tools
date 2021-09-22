@@ -31,7 +31,7 @@
 				<string>com.eusoft.eudic</string>
 			</array>		
 			<key>Option Description</key>
-			<string></string>
+			<string>Choose the correct Eudic Version</string>
 		</dict>
 	</array>
 	<key>Extension Description</key>
@@ -43,13 +43,13 @@
 	<key>Apps</key>
 	<array>
 		<dict>
-			<key>Bundle Identifier</key>
+			<key>Bundle Identifiers</key>
 			<array>
 				<string>com.eusoft.freeeudic</string>
 				<string>com.eusoft.eudic</string>				
 			</array>			
 			<key>Check Installed</key>
-			<false/>
+			<true/>
 			<key>Link</key>
 			<string>http://www.eudic.net/eudic/mac_dictionary.aspx</string>
 			<key>Name</key>
