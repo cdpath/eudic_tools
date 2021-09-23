@@ -29,7 +29,12 @@
 			<array>
 				<string>com.eusoft.freeeudic</string>
 				<string>com.eusoft.eudic</string>
-			</array>		
+			</array>
+			<key>Option Value Labels</key>
+			<array>
+				<string>Eudic</string>
+				<string>Eudic Pro</string>
+			</array>
 			<key>Option Description</key>
 			<string>Choose the correct Eudic Version</string>
 		</dict>
